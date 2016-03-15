@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+ <html>
+`   <head>
+ 
+    <style>
+
+            #redball{
+                top:170px;
+                position:absolute;
+            }
+
+    </style>
+  <script>
+   function pfadeOut(){
+       var myparagraph=$("#myDiv");
+       myparagraph.fadeOut();
+   }
+   
+   function pfadeIn(){
+    var myparagraph=$("#myDiv");
+    myparagraph.fadeIn();
+   }
+   
+   function movetop(){
+    var ball=$("#redball");
+    ball.animate({"top":"-=10px"},2000,"linear")
+   }
+   
+   function moveright(){
+   var ball=$("#redball");
+   ball.animate({"left":"+=10px"},2000,"linear");
+   }
+   
+   function moveleft(){
+    var ball=$("#redball");
+   ball.animate({"left":"-=10px"},2000,"linear");
+   }
+   
+   function movedown(){
+     var ball=$("#redball");
+    ball.animate({"top":"+=10px"},2000,"linear");
+   }
+   
+   function movedownright(){
+     var ball=$("#redball");
+    ball.animate({"top":"+=10px", "left":"+=10"},2000,"linear");
+   }
+   
+   function movedownleft(){
+    var ball=$("#redball");
+    ball.animate({"top":"+=10px", "left":"-=10"},2000,"linear");
+   }
+   
+   function moveupleft(){
+     var ball=$("#redball");
+    ball.animate({"top":"-=10px", "left":"-=10"},2000,"linear");
+   }
+   
+   function moveupright(){
+     var ball=$("#redball");
+    ball.animate({"top":"-=10px", "left":"+=10"},2000,"linear");
+   }
+   
+   function movesquare(){
+     var ball=$("#redball");
+      ball.animate({"left":"+=70px"},2000,"linear");
+      ball.animate({"top":"+=70px"},2000,"linear");
+      ball.animate({"left":"-=70px"},2000,"linear");
+      ball.animate({"top":"-=70px"},2000,"linear");
+    }
+    
+    function movetriangle(){
+     var ball=$("#redball");
+     ball.animate({"top":"+=10px", "left":"+=10"},2000,"linear");
+     ball.animate({"left":"-=10px"},2000,"linear");
+      ball.animate({"top":"-=10px", "left":"+=10"},2000,"linear");
+     }
+    function moveoctagon(){
+     var ball=$("#redball");
+     ball.animate({"left":"+=30px"},2000,"linear");
+     ball.animate({"top":"+=30px", "left":"+=10"},2000,"linear");
+     ball.animate({"top":"+=30px"},2000,"linear");
+     ball.animate({"top":"+=30px", "left":"-=10"},2000,"linear");
+     ball.animate({"left":"-=30px"},2000,"linear");
+     ball.animate({"top":"-=30px", "left":"-=10"},2000,"linear");
+     ball.animate({"top":"-=30px"},2000,"linear");
+     ball.animate({"top":"-=30px", "left":"+=10"},2000,"linear");
+  
+    }
+  </script>
+ <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+ 
+    </head>
+       <body>
+        <p> This is Iryna. Here is my redball4</p>
+        <p div id="myDiv">My second paragraph</p>
+                    
+                <img id="redball" src=" http://lrn.icstars.org/redball.jpg "></img>
+             <button onclick="sayhello()"> hello worlds</button>
+             <button  onclick="moveright()">move right</button>
+             <button onclick="moveleft()">move left</button>
+             <button onclick="movetop()">move top</button>
+             <button onclick="movedown()">move down</button>
+             <button onclick="movesquare()">move square</button>
+             <button onclick="movedownright()">move down righr</button>
+             <button onclick="movedownleft()">move down left</button>
+             <button onclick="moveupleft()">move up left</button>
+             <button onclick="moveupright()">move up right</button>
+             <button onclick="moveoctagon()">octagon</button>
+             <button onclick="movetriangle()">triangle</button>
+             <button onclick="pfadeOut()">fade out</button>
+             <button onclick="pfadeIn()">fade in</button>
+  
+  
+       </body>
+</html>
